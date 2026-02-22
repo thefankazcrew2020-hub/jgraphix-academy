@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JGraphix Pro Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">JGraphix Pro Academy</div>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#videos">Videos</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Create Without Limits</h1>
+  <p>Learn Graphic Design, Video Editing & Motion Like a Pro</p>
+  <button onclick="scrollToSection('courses')">Explore Courses</button>
+</section>
+
+<section id="courses" class="section">
+  <h2>Premium Courses</h2>
+  <div class="grid">
+    <div class="card">Graphic Design Masterclass</div>
+    <div class="card">Video Editing Pro</div>
+    <div class="card">Photography Secrets</div>
+    <div class="card">Motion Graphics Advanced</div>
+  </div>
+</section>
+
+<section id="videos" class="section dark">
+  <h2>Watch My YouTube Content</h2>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=jgraphix123"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="dashboard" class="section">
+  <h2>Student Login</h2>
+  <div class="form-box">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+  </div>
+</section>
+
+<section id="booking" class="section dark">
+  <h2>Book a Live Class</h2>
+  <div class="form-box">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <select>
+      <option>Select Course</option>
+      <option>Graphic Design</option>
+      <option>Video Editing</option>
+      <option>Motion Graphics</option>
+    </select>
+    <button onclick="fakePayment()">Proceed to Payment</button>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Newsletter Signup</h2>
+  <div class="form-box">
+    <input type="email" placeholder="Enter your email">
+    <button onclick="subscribe()">Subscribe</button>
+    <p id="subMsg"></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 JGraphix Pro Academy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
